@@ -2,18 +2,7 @@
 ul{
     display: flex;
     justify-content: space-evenly;
-}
-/* Section: Grid Nav */
-nav h1{
-    grid-area: nav-h1;
-}
-nav ul{
-    grid-area: nav-bar;
-}
-nav{
-    display: grid;
-    grid-gap: 3px;
-    grid-template-areas: "nav-h1""nav-bar";
+    align-items: stretch;
 }
 /* Section: Grid Services */
 .head1{
@@ -48,3 +37,19 @@ nav{
     grid-gap: 3px;
     grid-template-areas: "up-h2""un""bre";
 }
+/* Section: Sustain */
+.head3{
+    grid-area: sus-h3;
+}
+.journey{
+    grid-area: jour-1;
+}
+.jour-2{
+    grid-area: jour-2;
+}
+.sustain{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-areas: "sus-h3""jou-1""jour-2";
+}
+/* Section: Media-Queries */
