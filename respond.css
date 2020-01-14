@@ -1,8 +1,8 @@
 /* Section: Flex-box */
 ul{
     display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
+    justify-content: space-between;
+    margin-right: 5px;
 }
 /* Section: Grid Services */
 .head1{
@@ -41,15 +41,18 @@ ul{
 .head3{
     grid-area: sus-h3;
 }
-.journey{
+.jour-1{
     grid-area: jour-1;
 }
 .jour-2{
     grid-area: jour-2;
 }
+.jour-3{
+    grid-area: jour-3;
+}
 .sustain{
     display: grid;
     grid-gap: 3px;
-    grid-template-areas: "sus-h3""jou-1""jour-2";
+    grid-template-areas: "sus-h3""jour-1""jour-2""jour-3";
 }
 /* Section: Media-Queries */
