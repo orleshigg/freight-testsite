@@ -10,6 +10,11 @@ nav h1{
 nav ul{
     grid-area: nav-bar;
 }
+nav{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-areas: "nav-h1""nav-bar";
+}
 /* Section: Grid Services */
 .head1{
     grid-area: serv-h1;
@@ -19,4 +24,27 @@ nav ul{
 }
 .sea{
     grid-area: sea;
+}
+.road{
+    grid-area: road;
+}
+.services{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-areas: "serv-h1""air""sea""road";
+}
+/* Section: Grid Updates */
+.head2{
+    grid-area: up-h2;
+}
+.un-regs{
+    grid-area: un;
+}
+.brexit-info{
+    grid-area: bre;
+}
+.updates{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-areas: "up-h2""un""bre";
 }
