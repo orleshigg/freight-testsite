@@ -1,0 +1,22 @@
+/* Section: Flex-box */
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Section: Grid Nav */
+nav h1{
+    grid-area: nav-h1;
+}
+nav ul{
+    grid-area: nav-bar;
+}
+/* Section: Grid Services */
+.head1{
+    grid-area: serv-h1;
+}
+.air{
+    grid-area: air;
+}
+.sea{
+    grid-area: sea;
+}
