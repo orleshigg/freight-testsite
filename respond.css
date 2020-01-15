@@ -72,6 +72,8 @@ nav{
 }
 @media only screen and (min-width: 700px){
     .services{
+        background-color: #2678BF;
+        padding-top: 10px;
         display: flex;
         justify-content: space-evenly;
         align-items: stretch;

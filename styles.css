@@ -27,3 +27,6 @@ img{
 a{
     font-family: 'Alegreya SC', serif;
 }
+a:link, a:visited, a:hover, a:active{
+    color: black;
+}
