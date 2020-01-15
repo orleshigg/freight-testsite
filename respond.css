@@ -15,24 +15,6 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-/* Section: Grid Services */
-.head1{
-    grid-area: serv-h1;
-}
-.air{
-    grid-area: air;
-}
-.sea{
-    grid-area: sea;
-}
-.road{
-    grid-area: road;
-}
-.services{
-    display: grid;
-    grid-gap: 3px;
-    grid-template-areas: "serv-h1""air""sea""road";
-}
 /* Section: Grid Updates */
 .head2{
     grid-area: up-h2;
@@ -61,9 +43,36 @@ nav{
 .jour-3{
     grid-area: jour-3;
 }
+.link-jour{
+    grid-area: link-jour;
+}
 .sustain{
     display: grid;
     grid-gap: 3px;
-    grid-template-areas: "sus-h3""jour-1""jour-2""jour-3";
+    grid-template-areas: "sus-h3""jour-1""jour-2""jour-3""link-jour";
 }
 /* Section: Media-Queries */
+@media only screen and (min-width: 400px){
+    nav{
+        grid-template-areas: "logo links";
+    }
+}
+@media only screen and (min-width: 500px){
+    .updates{
+        grid-column-gap: 20px;
+        grid-template-areas: "up-h2 up-h2""un bre";
+    }
+    .sustain{
+        grid-column-gap: 20px;
+        grid-template-areas: "sus-h3 sus-h3""jour-1 jour-1""jour-2 jour-3""link-jour link-jour";
+    }
+    .brexit-info h2{
+        padding-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 700px){
+    .services{
+        grid-column-gap: 20px;
+        grid-template-areas: "serv-h1 serv-h1 serv-h1""air sea road";
+    }
+}
