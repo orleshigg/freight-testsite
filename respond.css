@@ -1,8 +1,19 @@
-/* Section: Flex-box */
-ul{
+/* Section: Grid Nav */
+nav h1{
+    grid-area: logo;
+}
+.links{
+    grid-area: links;
+}
+nav{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-areas: "logo""links";
+}
+/* Section: Flex-Box */
+.links{
     display: flex;
     justify-content: space-between;
-    margin-right: 5px;
 }
 /* Section: Grid Services */
 .head1{
