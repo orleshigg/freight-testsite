@@ -1,21 +1,29 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    margin:0;
 }
-h1, h2{
+main{
+    margin: 8px;
+}
+h1, h2, a{
     font-family: 'Alegreya SC', serif;
 }
 nav{
-    padding:0;
+    padding:10px;
     list-style: none;
+    background-color: #2678BF;
 }
-nav h1, nav a{
+nav h1, a.nav:link, a.nav:visited, a.nav:hover, a.nav:active{
+    font-size: 20px;
     font-family: 'Girassol', cursive;
+    color: white;
 }
 nav h1{
+    font-size: 28px;
     margin: 0;
 }
-nav a{
-    padding-top: 6px;
+.links{
+    padding-top: 7px;
     padding-right: 5px;
 }
 div h1{
@@ -24,9 +32,9 @@ div h1{
 img{
     max-width: 100%
 }
-a{
-    font-family: 'Alegreya SC', serif;
-}
 a:link, a:visited, a:hover, a:active{
     color: black;
+}
+.jour-1{
+    margin-bottom: 0;
 }

@@ -52,12 +52,10 @@ nav{
     grid-template-areas: "sus-h3""jour-1""jour-2""jour-3""link-jour";
 }
 /* Section: Media-Queries */
-@media only screen and (min-width: 400px){
+@media only screen and (min-width: 500px){
     nav{
         grid-template-areas: "logo links";
     }
-}
-@media only screen and (min-width: 500px){
     .updates{
         grid-column-gap: 20px;
         grid-template-areas: "up-h2 up-h2""un bre";
@@ -72,7 +70,6 @@ nav{
 }
 @media only screen and (min-width: 700px){
     .services{
-        background-color: #2678BF;
         padding-top: 10px;
         display: flex;
         justify-content: space-evenly;
@@ -93,5 +90,10 @@ nav{
     }
     .col-1, .col-2, .col-3{
         width: 30%;
+    }
+}
+@media only screen and (min-width: 833px){
+    .brexit-info h2{
+        padding: 0;
     }
 }
